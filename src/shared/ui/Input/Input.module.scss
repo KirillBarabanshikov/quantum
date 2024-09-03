@@ -3,7 +3,6 @@
     flex-direction: column;
     gap: 10px;
     position: relative;
-    width: 100%;
 
     .labelWrap {
         display: flex;
@@ -26,29 +25,14 @@
 }
 
 .input {
-    display: flex;
-    align-items: center;
     background-color: var(--color-gray);
     border-radius: 10px;
     height: 34px;
+    font-size: 14px;
+    color: var(--color-dark-blue);
+    padding: 12px 15px;
 
-    input {
-        width: 100%;
-        font-size: 14px;
-        color: var(--color-dark-blue);
-        padding: 12px 15px;
-        background-color: unset;
-
-        &::placeholder {
-            color: var(--color-blue-tertiary);
-        }
-    }
-}
-
-.icon {
-    margin-right: 20px;
-
-    svg {
-        display: block;
+    &::placeholder {
+        color: var(--color-blue-tertiary);
     }
 }

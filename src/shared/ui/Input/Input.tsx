@@ -1,4 +1,4 @@
-import { FC, InputHTMLAttributes, ReactNode, useId } from 'react';
+import { FC, InputHTMLAttributes, useId } from 'react';
 import clsx from 'clsx';
 
 import styles from './Input.module.scss';
@@ -6,10 +6,9 @@ import styles from './Input.module.scss';
 interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
     label?: string;
     hint?: string;
-    suffixIcon?: ReactNode;
 }
 
-export const Input: FC<IInputProps> = ({ label, hint, suffixIcon, className, ...props }) => {
+export const Input: FC<IInputProps> = ({ label, hint, className, ...props }) => {
     const id = useId();
 
     return (
@@ -22,10 +21,7 @@ export const Input: FC<IInputProps> = ({ label, hint, suffixIcon, className, ...
                     {hint && <span className={styles.hint}>{hint}</span>}
                 </div>
             )}
-            <div className={clsx(styles.input, className)}>
-                <input type='text' id={id} {...props} />
-                {suffixIcon && <div className={styles.icon}>{suffixIcon}</div>}
-            </div>
+            <input type='text' id={id} className={clsx(styles.input, className)} {...props} />
         </div>
     );
 };

@@ -1,8 +1,12 @@
 import SearchIcon from '@/shared/assets/icons/search.svg?react';
-import { Input } from '@/shared/ui';
 
 import styles from './Search.module.scss';
 
 export const Search = () => {
-    return <Input placeholder={'Поиск'} suffixIcon={<SearchIcon />} className={styles.search} />;
+    return (
+        <div className={styles.search}>
+            <input type={'text'} placeholder={'Поиск'} className={styles.input} />
+            <SearchIcon className={styles.icon} />
+        </div>
+    );
 };

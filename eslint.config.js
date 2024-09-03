@@ -22,7 +22,25 @@ export default tseslint.config(
         rules: {
             ...reactHooks.configs.recommended.rules,
             'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
-            'simple-import-sort/imports': 'error',
+            'simple-import-sort/imports': [
+                'error',
+                {
+                    groups: [
+                        // Группа для импорта 'react' и его подмодулей
+                        ['^react', '^@?\\w'],
+                        // Импорты встроенных модулей
+                        ['^\\u0000'],
+                        // Импорты других библиотек из 'node_modules'
+                        ['^@?\\w'],
+                        // Абсолютные импорты (например, 'components/Button')
+                        ['^@/'],
+                        // Относительные импорты
+                        ['^\\.'],
+                        // Импорты CSS/SCSS файлов
+                        ['^.+\\.s?css$'],
+                    ],
+                },
+            ],
             'simple-import-sort/exports': 'error',
         },
     },

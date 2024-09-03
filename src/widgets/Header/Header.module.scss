@@ -1,0 +1,29 @@
+.header {
+    padding-top: 14px;
+
+    .headerContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        .headerContent {
+            display: flex;
+            align-items: center;
+            background-color: var(--color-dark-blue);
+            border-radius: 20px;
+            padding: 14px 30px;
+
+            .logo {
+                margin-right: 83px;
+                height: 17px;
+            }
+
+            .searchWrap {
+                display: flex;
+                gap: 17px;
+                width: 100%;
+                max-width: 684px;
+            }
+        }
+    }
+}

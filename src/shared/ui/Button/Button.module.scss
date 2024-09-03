@@ -58,5 +58,24 @@
                 }
             }
         }
+
+        &.white {
+            border: 1px solid var(--color-white);
+            color: var(--color-white);
+
+            @media (hover: hover) {
+                &:hover {
+                    background-color: var(--color-white);
+                    color: var(--color-dark-blue);
+                }
+            }
+
+            @media (hover: none) {
+                &:active {
+                    background-color: var(--color-white);
+                    color: var(--color-dark-blue);
+                }
+            }
+        }
     }
 }

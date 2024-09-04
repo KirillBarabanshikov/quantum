@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
+import clsx from 'clsx';
 
 import styles from './HeaderLinks.module.scss';
-import clsx from 'clsx';
 
 export const HeaderLinks = () => {
     return (

@@ -13,31 +13,33 @@ import styles from './Header.module.scss';
 
 export const Header = () => {
     return (
-        <header className={styles.header}>
-            <div className={clsx(styles.headerContainer, 'container')}>
-                <HeaderLinks />
-                <div className={styles.headerContent}>
-                    <Link to={'/'} className={styles.logo}>
-                        <Logo />
-                    </Link>
-                    <div className={styles.searchWrap}>
-                        <CatalogButton />
-                        <Search />
-                    </div>
-                    <div className={styles.options}>
-                        <div className={styles.option}>
-                            <BagIcon />
-                            <span className={styles.badge}>1</span>
+        <>
+            <HeaderLinks />
+            <header className={styles.header}>
+                <div className={clsx(styles.headerContainer, 'container')}>
+                    <div className={styles.headerContent}>
+                        <Link to={'/'} className={styles.logo}>
+                            <Logo />
+                        </Link>
+                        <div className={styles.searchWrap}>
+                            <CatalogButton />
+                            <Search />
                         </div>
-                        <div className={styles.option}>
-                            <GradeIcon />
-                        </div>
-                        <div className={styles.option}>
-                            <AccountIcon />
+                        <div className={styles.options}>
+                            <div className={styles.option}>
+                                <BagIcon />
+                                <span className={styles.badge}>1</span>
+                            </div>
+                            <div className={styles.option}>
+                                <GradeIcon />
+                            </div>
+                            <div className={styles.option}>
+                                <AccountIcon />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
+        </>
     );
 };

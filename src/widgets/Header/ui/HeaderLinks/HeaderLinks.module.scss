@@ -1,22 +1,26 @@
-.headerLinksWrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 10px;
+.headerTop {
+    padding: 14px 0;
 
-    .headerLinks {
+    .headerLinksWrap {
         display: flex;
         align-items: center;
-        gap: 40px;
-    }
+        justify-content: space-between;
+        height: 10px;
 
-    .link {
-        font-weight: 500;
-        font-size: 14px;
-        color: var(--color-blue-tertiary);
-    }
+        .headerLinks {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
 
-    .tel {
-        font-weight: 600;
+        .link {
+            font-weight: 500;
+            font-size: 14px;
+            color: var(--color-blue-tertiary);
+        }
+
+        .tel {
+            font-weight: 600;
+        }
     }
 }

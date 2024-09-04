@@ -1,0 +1,34 @@
+.productsCarouselWrap {
+    .titleWrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 58px;
+
+        .title {
+            font-weight: 500;
+            font-size: 38px;
+            line-height: 27px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 11px;
+
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 35px;
+                height: 35px;
+                border-radius: 20px;
+                background-color: var(--color-grey);
+                color: var(--color-dark-blue);
+            }
+        }
+    }
+
+    .slide {
+        width: auto;
+    }
+}

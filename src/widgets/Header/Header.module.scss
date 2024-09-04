@@ -2,67 +2,61 @@
     position: sticky;
     top: 14px;
 
-    .headerContainer {
+    .headerContent {
         display: flex;
-        flex-direction: column;
-        gap: 14px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--color-dark-blue);
+        border-radius: 20px;
+        padding: 14px 30px;
+        position: sticky;
+        top: 0;
 
-        .headerContent {
+        .logo {
+            margin-right: 83px;
+            height: 17px;
+        }
+
+        .searchWrap {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: var(--color-dark-blue);
-            border-radius: 20px;
-            padding: 14px 30px;
-            position: sticky;
-            top: 0;
+            gap: 17px;
+            width: 100%;
+            max-width: 684px;
+            margin-right: 17px;
+        }
 
-            .logo {
-                margin-right: 83px;
-                height: 17px;
-            }
+        .options {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            gap: 23px;
+            flex: 1;
 
-            .searchWrap {
-                display: flex;
-                gap: 17px;
-                width: 100%;
-                max-width: 684px;
-                margin-right: 17px;
-            }
+            .option {
+                position: relative;
+                color: var(--color-white);
 
-            .options {
-                display: flex;
-                align-items: flex-end;
-                justify-content: flex-end;
-                gap: 23px;
-                flex: 1;
+                @media (hover: hover) {
+                    cursor: pointer;
+                }
 
-                .option {
-                    position: relative;
-                    color: var(--color-white);
+                .badge {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
 
-                    @media (hover: hover) {
-                        cursor: pointer;
-                    }
+                    position: absolute;
+                    right: -5px;
+                    bottom: 0;
+                    min-width: 12px;
 
-                    .badge {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                    background-color: var(--color-red-accent);
+                    border-radius: 10px;
+                    padding: 3px 4px;
 
-                        position: absolute;
-                        right: -5px;
-                        bottom: 0;
-                        min-width: 12px;
-
-                        background-color: var(--color-red-accent);
-                        border-radius: 10px;
-                        padding: 3px 4px;
-
-                        font-weight: 700;
-                        font-size: 8px;
-                        line-height: 6px;
-                    }
+                    font-weight: 700;
+                    font-size: 8px;
+                    line-height: 6px;
                 }
             }
         }

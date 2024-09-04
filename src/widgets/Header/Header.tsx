@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import clsx from 'clsx';
 
 import { Search } from '@/features/search';
 import AccountIcon from '@/shared/assets/icons/account_box.svg?react';
@@ -16,7 +15,7 @@ export const Header = () => {
         <>
             <HeaderLinks />
             <header className={styles.header}>
-                <div className={clsx(styles.headerContainer, 'container')}>
+                <div className={'container'}>
                     <div className={styles.headerContent}>
                         <Link to={'/'} className={styles.logo}>
                             <Logo />

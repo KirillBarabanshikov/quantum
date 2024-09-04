@@ -1,4 +1,4 @@
-export { MainBanner } from './Banners';
-export { NewCollectionBanner } from './Banners/NewCollectionBanner';
+export { MainBanner, NewCollectionBanner, QuestionBanner } from './Banners';
+export { CategoriesList } from './CategoriesList';
 export { Footer } from './Footer';
 export { Header } from './Header';

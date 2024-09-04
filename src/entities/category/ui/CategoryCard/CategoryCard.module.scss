@@ -4,8 +4,7 @@
     justify-content: space-between;
     background-color: var(--color-grey);
     border-radius: 20px;
-    width: 305px;
-    height: 305px;
+    aspect-ratio: 1;
 
     .title {
         font-weight: 500;

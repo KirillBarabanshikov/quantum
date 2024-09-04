@@ -1,6 +1,6 @@
 import { Layout } from '@/shared/ui';
-import { Header } from '@/widgets';
+import { Footer, Header } from '@/widgets';
 
 export const BaseLayout = () => {
-    return <Layout headerSlot={<Header />} footerSlot={<div>foot</div>} />;
+    return <Layout headerSlot={<Header />} footerSlot={<Footer />} />;
 };

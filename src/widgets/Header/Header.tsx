@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 
 import { Search } from '@/features/search';
+import AccountIcon from '@/shared/assets/icons/account_box.svg?react';
 import BagIcon from '@/shared/assets/icons/bag.svg?react';
 import GradeIcon from '@/shared/assets/icons/grade-fill.svg?react';
-import AccountIcon from '@/shared/assets/icons/account_box.svg?react';
 import Logo from '@/shared/assets/logos/logo_small.svg?react';
 
 import { CatalogButton, HeaderLinks } from './ui';

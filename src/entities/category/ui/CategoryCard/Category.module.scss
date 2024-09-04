@@ -1,0 +1,19 @@
+.categoryCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-grey);
+    width: 305px;
+    height: 305px;
+
+    .title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 13px;
+        padding: 30px 25px 0 25px;
+    }
+
+    .image {
+        mix-blend-mode: darken;
+    }
+}

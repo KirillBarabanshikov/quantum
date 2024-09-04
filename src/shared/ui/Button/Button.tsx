@@ -6,11 +6,22 @@ import styles from './Button.module.scss';
 interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     variant?: 'solid' | 'outline';
     theme?: 'blue' | 'white';
+    fullWidth?: boolean;
 }
 
-export const Button: FC<IButtonProps> = ({ variant = 'solid', theme = 'blue', className, children, ...props }) => {
+export const Button: FC<IButtonProps> = ({
+    variant = 'solid',
+    theme = 'blue',
+    fullWidth = false,
+    className,
+    children,
+    ...props
+}) => {
     return (
-        <button className={clsx(styles.button, styles[variant], styles[theme], className)} {...props}>
+        <button
+            className={clsx(styles.button, styles[variant], styles[theme], fullWidth && styles.fullWidth, className)}
+            {...props}
+        >
             {children}
         </button>
     );

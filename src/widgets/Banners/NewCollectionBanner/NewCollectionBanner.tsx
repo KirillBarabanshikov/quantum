@@ -19,7 +19,7 @@ export const NewCollectionBanner: FC<INewCollectionBannerProps> = ({ className }
                         Zenmuse H20N, оснащенная сенсорами с технологией Starlight в камерах с зумом и широким углом,
                         позволяет обнаруживать даже едва уловимые источники света до 0,0001 лк.
                     </p>
-                    <Button variant={'outline'} theme={'blue'}>
+                    <Button variant={'outline'} theme={'blue'} className={styles.button}>
                         Каталог
                     </Button>
                 </div>

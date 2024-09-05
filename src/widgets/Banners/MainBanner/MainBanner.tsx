@@ -11,7 +11,7 @@ interface IMainBannerProps {
 
 export const MainBanner: FC<IMainBannerProps> = ({ className }) => {
     return (
-        <section className={clsx(className, styles.mainBanner)}>
+        <section className={clsx(styles.mainBanner, className)}>
             <div className={'container'}>
                 <div className={styles.mainBannerContainer}>
                     <h1 className={styles.title}>Техника нового поколения</h1>
@@ -22,7 +22,7 @@ export const MainBanner: FC<IMainBannerProps> = ({ className }) => {
                         <br />
                         ввезенное оборудование и решения на его базе.
                     </p>
-                    <Button variant={'outline'} theme={'white'}>
+                    <Button variant={'outline'} theme={'white'} className={styles.button}>
                         Каталог
                     </Button>
                 </div>

@@ -22,7 +22,7 @@ export const QuestionBanner: FC<IQuestionBannerProps> = ({ className }) => {
                         <br />
                         Операторы работают круглосуточно.
                     </p>
-                    <Button variant={'outline'} theme={'white'}>
+                    <Button variant={'outline'} theme={'white'} className={styles.button}>
                         Написать
                     </Button>
                 </div>

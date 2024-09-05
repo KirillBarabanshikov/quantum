@@ -5,6 +5,7 @@
     transition: background-color 300ms linear;
 
     .productImage {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -21,6 +22,21 @@
             height: 100%;
             object-fit: contain;
             mix-blend-mode: darken;
+        }
+
+        .grade {
+            position: absolute;
+            top: 20px;
+            right: 0;
+            fill: transparent;
+            transition: fill 300ms linear;
+
+            @media (hover: hover) {
+                &:hover {
+                    fill: var(--color-dark-blue);
+                    cursor: pointer;
+                }
+            }
         }
     }
 

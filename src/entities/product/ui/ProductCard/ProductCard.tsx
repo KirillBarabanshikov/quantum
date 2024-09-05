@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 
+import GradeIcon from '@/shared/assets/icons/grade-outline.svg?react';
 import { Button } from '@/shared/ui';
 
 import styles from './ProductCard.module.scss';
@@ -16,6 +17,7 @@ export const ProductCard = () => {
                         alt={'product'}
                     />
                 </Link>
+                <GradeIcon className={styles.grade} />
             </div>
             <Link to={'/'} className={styles.productTitle}>
                 Рама квадрокоптера Cetus X (BETAFPV)

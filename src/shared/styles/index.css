@@ -82,3 +82,9 @@ h6 {
     margin: 0 auto;
     box-sizing: content-box;
 }
+
+.title {
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 27px;
+}

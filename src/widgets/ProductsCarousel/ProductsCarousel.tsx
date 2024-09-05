@@ -21,7 +21,7 @@ export const ProductsCarousel: FC<IProductsCarouselProps> = ({ title, className 
         <section className={clsx(styles.productsCarouselWrap, className)}>
             <div className={'container'}>
                 <div className={styles.titleWrap}>
-                    <h2 className={styles.title}>{title}</h2>
+                    <h2 className={'title'}>{title}</h2>
                     <div className={styles.buttons}>
                         <button onClick={() => swiper?.slidePrev()}>
                             <ArrowBackwardIcon />

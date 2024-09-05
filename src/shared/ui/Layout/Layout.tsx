@@ -13,7 +13,7 @@ export const Layout: FC<ILayoutProps> = ({ headerSlot, footerSlot }) => {
         <div className={styles.layout}>
             {headerSlot}
             <main>
-                <Suspense fallback={<div>...loading</div>}>
+                <Suspense fallback={<div>loading...</div>}>
                     <Outlet />
                 </Suspense>
             </main>

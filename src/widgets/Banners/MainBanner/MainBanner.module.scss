@@ -1,9 +1,10 @@
 .mainBanner {
     .mainBannerContainer {
         background-image: url('@/shared/assets/images/banners/main_banner_bg.png');
+        background-size: cover;
         padding: 135px 108px 117px;
         border-radius: 20px;
-        height: 487px;
+        min-height: 487px;
 
         .title {
             font-weight: 500;

@@ -1,9 +1,10 @@
 .questionBanner {
     .questionBannerContainer {
         background-image: url('@/shared/assets/images/banners/question_banner_bg.png');
+        background-size: cover;
         padding: 140px 108px 125px;
         border-radius: 20px;
-        height: 487px;
+        min-height: 487px;
 
         .title {
             font-weight: 500;

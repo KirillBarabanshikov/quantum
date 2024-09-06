@@ -1,13 +1,14 @@
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { AnimatePresence, motion } from 'framer-motion';
+
+import { CategoryCard } from '@/entities/category';
 import ArrowDownIcon from '@/shared/assets/icons/arrow_down.svg?react';
 import UnionIcon from '@/shared/assets/icons/union.svg?react';
+import { useOutsideClick } from '@/shared/hooks';
 import { Button } from '@/shared/ui';
 
 import styles from './CatalogButton.module.scss';
-import { useState } from 'react';
-import { CategoryCard } from '@/entities/category';
-import { Link } from 'react-router-dom';
-import { AnimatePresence, motion } from 'framer-motion';
-import { useOutsideClick } from '@/shared/hooks';
 
 export const CatalogButton = () => {
     const [isOpen, setIsOpen] = useState(false);

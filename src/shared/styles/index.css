@@ -83,6 +83,15 @@ h6 {
     box-sizing: content-box;
 }
 
+.scrollable {
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.scrollable::-webkit-scrollbar {
+    width: 0;
+}
+
 .title {
     font-weight: 500;
     font-size: 38px;

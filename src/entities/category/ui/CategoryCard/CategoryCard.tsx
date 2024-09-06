@@ -1,8 +1,9 @@
+import { FC } from 'react';
+import clsx from 'clsx';
+
 import image from './image.png';
 
 import styles from './CategoryCard.module.scss';
-import { FC } from 'react';
-import clsx from 'clsx';
 
 interface ICategoryCardProps {
     variant?: 'main' | 'catalog';
